@@ -171,3 +171,30 @@ crm = {
 #   Jane Otto
 #
 # ------- your code under here -----------
+
+crm[:people].each do |person|
+  puts person[:first_name]
+
+  person[:employments].each do |employment|
+    puts "  #{employment[:title]} at #{crm[:companies][employment[:company_id]]}"
+  end
+end
+
+# p crm[:companies][]
+
+# key is integer and value is a string (name of company)
+#
+# {
+#   0 => "Nicolas and Sons",
+#   57 => "Mueller LLC",
+#   2 => "Mohr, King and Gleason",
+#   3 => "Grimes Inc",
+#   142 => "Schmidt-Rolfson",
+#   5 => "Shanahan, Altenwerth and Nikolaus",
+#   6 => "Dickens, Blanda and Bosco",
+#   31 => "Nikolaus Inc",
+#   89 => "Rempel, Berge and Bogan",
+#   9 => "Steuber, Wisozk and Gorczany"
+# }
+
+#need to access companies hash which is inside of the crm hash

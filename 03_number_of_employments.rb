@@ -160,3 +160,11 @@ crm = {
 crm[:people].each do |person|
   puts "#{person[:first_name]} - #{person[:employments].length}"
 end
+
+# crm[:people].each do |person|
+#   puts "#{person[:first_name]} - #{person[:employments].count}"
+# end
+# hash notation so can use brackets
+# people[{}{}{}]
+# inside of the hash are multiple key value pairs
+# person[:key]

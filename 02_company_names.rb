@@ -152,5 +152,9 @@ crm = {
 # ------- your code under here -----------
 
 crm[:companies].each do |company_id, company|
-  puts "#{campany_id} (#{company})"
+  puts "#{company_id} (#{company})"
 end
+
+# crm[:companies].each do |company|
+#   puts "#{company.last} #{company.first}"
+# end

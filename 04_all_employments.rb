@@ -175,6 +175,11 @@ crm = {
 crm[:people].each do |person|
   puts person[:first_name] + " " + person[:last_name]
   person[:employments].each do |employment|
-    puts "  #{employment[:title]} at company #{employment[:company_id]}"
+    puts "  #{employment[:title]} at #{employment[:company_id]}"
   end
 end
+
+#each person is a hash
+#people is an array of person hashes
+#employment is a hash
+#title is a key [] because you want to return that value
